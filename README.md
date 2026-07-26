@@ -1,7 +1,7 @@
 # FDxUISP
 
 <p align="center">
-  <img src="images/FDxUISP_Intro.png" alt="FDxUISP and Juno USBasp 2.0" width="100%">
+  <img src="img/FDxUISP.png" alt="FDxUISP and Juno USBasp 2.0" width="100%">
 </p>
 
 USBasp is a programmer based on the V-USB project, a virtual software-based USB device simulator. A programmer transfers compiled machine code into an MCU, so in that sense, a programmer is an uploader.
