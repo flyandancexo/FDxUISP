@@ -29,7 +29,7 @@ The original hardware has a slow-clock switch. This is stupid and unnecessary wh
 
 
 <p align="center">
-  <img src="image/FDxUISP_Speed.png" alt="FDxUISP speed test" width="100%">
+  <img src="image/FDxUISP_Speed.gif" alt="FDxUISP speed test" width="100%">
 </p>
 
 
