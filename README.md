@@ -39,10 +39,10 @@ Estimated total time includes both flash writing and verification reading. The 3
 
 | MCU at 80% | Firmware | 10 | 100 | 1k | 10k | 100k |
 |---|---|---:|---:|---:|---:|---:|
-| 32 KB — 26,214 bytes | FDxUISP | 45s | 7m 29s | 1h 14m 50s | 12h 28m 23s | 5d 4h 43m 53s |
-| 32 KB — 26,214 bytes | Original | 2m 57s | 29m 34s | 4h 55m 42s | 2d 1h 17m 1s | 20d 12h 50m 11s |
-| 128 KB — 104,858 bytes | FDxUISP | 2m 43s | 27m 7s | 4h 31m 11s | 1d 21h 11m 51s | 18d 19h 58m 31s |
-| 128 KB — 104,858 bytes | Original | 11m 50s | 1h 58m 17s | 19h 42m 48s | 8d 5h 8m 5s | 82d 3h 20m 46s |
+| 32 KB — 26,214 bytes | **FDxUISP** | 45s | 7m 29s | 1h 14m | 12h 28m  | 5d 4h 43m  |
+| 32 KB — 26,214 bytes | Original | 2m 57s | 29m 34s | 4h 55m | 2d 1h 17m | 20d 12h 50m  |
+| 128 KB — 104,858 bytes | **FDxUISP** | 2m 43s | 27m 7s | 4h 31m | 1d 21h 11m  | 18d 19h 58m |
+| 128 KB — 104,858 bytes | Original | 11m 50s | 1h 58m 17s | 19h 42m | 8d 5h 8m  | 82d 3h 20m |
 
 ## Buy Me a Coffee
 
