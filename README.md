@@ -1,10 +1,11 @@
-# FDxUISP
+# FDxUISP - Ultimate Optimized USBasp Programmer 10KB/s++
+
+USBasp is a programmer based on the V-USB project, a virtual software-based USB device simulator. A programmer transfers compiled machine code into an MCU, so in that sense, a programmer is an uploader.
 
 <p align="center">
   <img src="img/FDxUISP.png" alt="FDxUISP and Juno USBasp 2.0" width="100%">
 </p>
 
-USBasp is a programmer based on the V-USB project, a virtual software-based USB device simulator. A programmer transfers compiled machine code into an MCU, so in that sense, a programmer is an uploader.
 
 **Juno USBasp 2.0** is my second PCB design. It measures only **28 × 12 mm**, probably the world's smallest USBasp hardware. The firmware is christened **FDxUISP**. Everything, including V-USB, has been rewritten and optimized, with lightning-fast **13.05 kB/s write** and **14.22 kB/s read** speeds recorded.
 
@@ -16,13 +17,6 @@ A lot of what I learned while coding my AVR910 programmer was used to rewrite FD
 
 The original hardware has a slow-clock switch. This is stupid and unnecessary when AUTO SCK is real. Since nearly every USBasp board has the switch, FDxUISP still uses it, but switching it turns on super-speed mode. Technically, this can be simple and complicated, so no further explanation is provided.
 
-## Juno USBasp 2.0 Hardware
-
-- Compact V-USB programmer with an onboard AVR MCU and standard 6-pin ISP connector
-- Firmware builds for supported MCUs and 12 MHz or 16 MHz clocks
-- Selectable 5 V or 3 V target power
-- SS self-programming pads for updating the onboard MCU
-- PC2 speed switch: open selects normal AUTO SCK; grounded uses one physical SCK step slower
 
 ## Firmware Speed
 
