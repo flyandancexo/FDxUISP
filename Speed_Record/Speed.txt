@@ -1,0 +1,18 @@
+===============================================
+FDxUISP_V1.7s - Atmega16
+
+10.59 kB/s Write || 13.01 kB/s Read
+
+15352 / 1.45 / 1000 = 10.59 kB/s Write
+15352 / 1.18 / 1000 = 13.01 kB/s Read
+
+===============================================
+
+FDxUISP_V1.7s - Atmega128
+
+12.52 kB/s Write || 13.28 kB/s Read
+
+129998 / 10.38 / 1000 = 12.52 kB/s Write
+129998 / 9.79 / 1000 = 13.28 kB/s Read
+
+These are the records for newest FDxUISP_V1.7s AI optimized version.
