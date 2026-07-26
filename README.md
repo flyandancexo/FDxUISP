@@ -37,12 +37,12 @@ The original hardware has a slow-clock switch. This is stupid and unnecessary wh
 
 Estimated total time includes both flash writing and verification reading. The 32 KB estimate uses the FDxUISP V1.7s ATmega16 speed record; the 128 KB estimate uses the ATmega128 speed record.
 
-| MCU at 80% | Firmware | 10 | 100 | 1k | 10k | 100k |
+| MCU at 80% | Firmware | 1 | 10 | 100 | 1k | 10k |
 |---|---|---:|---:|---:|---:|---:|
-| 32 KB — 26,214 bytes | **FDxUISP** | 45s | 7m 29s | 1h 14m | 12h 28m  | 5d 4h 43m  |
-| 32 KB — 26,214 bytes | Original | 2m 57s | 29m 34s | 4h 55m | 2d 1h 17m | 20d 12h 50m  |
-| 128 KB — 104,858 bytes | **FDxUISP** | 2m 43s | 27m 7s | 4h 31m | 1d 21h 11m  | 18d 19h 58m |
-| 128 KB — 104,858 bytes | Original | 11m 50s | 1h 58m 17s | 19h 42m | 8d 5h 8m  | 82d 3h 20m |
+| 32 KB — 26,214 bytes | **FDxUISP** | 4s | 45s | 7m 29s | 1h 14m | 12h 28m |
+| 32 KB — 26,214 bytes | Original | 18s | 2m 57s | 29m 34s | 4h 55m | 2d 1h 17m |
+| 128 KB — 104,858 bytes | **FDxUISP** | 16s | 2m 43s | 27m 7s | 4h 31m | 1d 21h 11m |
+| 128 KB — 104,858 bytes | Original | 1m 11s | 11m 50s | 1h 58m 17s | 19h 42m | 8d 5h 8m |
 
 ## Buy Me a Coffee
 
