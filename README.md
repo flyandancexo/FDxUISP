@@ -1,9 +1,9 @@
-# FDxUISP - Ultimate Optimized USBasp Programmer 10KB/s++
+# FDxUISP - Ultimate USBasp Programmer 10KB/s++
 
 USBasp is a programmer based on the V-USB project, a virtual software-based USB device simulator. A programmer transfers compiled machine code into an MCU, so in that sense, a programmer is an uploader.
 
 <p align="center">
-  <img src="img/FDxUISP.png" alt="FDxUISP and Juno USBasp 2.0" width="100%">
+  <img src="img/FDxUISP_Theme.png" alt="FDxUISP and Juno USBasp 2.0" width="100%">
 </p>
 
 
@@ -21,16 +21,28 @@ The original hardware has a slow-clock switch. This is stupid and unnecessary wh
 ## Firmware Speed
 
 <p align="center">
-  <img src="img/m16.PNG" alt="FDxUISP speed test" width="100%">
+  <img src="img/FDxUISP_Speed.PNG" alt="FDxUISP speed test" width="100%">
 </p>
 
-| Firmware | Clock | Test File | Write | Read |
-|---|---:|---:|---:|---:|
-| Original USBasp | 12 MHz | 15,352 bytes | 2.39 kB/s | 3.87 kB/s |
-| FDxUISP V1.7 | 12 MHz | 15,352 bytes | 10.37 kB/s | 13.01 kB/s |
-| FDxUISP V1.7 | 16 MHz | 15,352 bytes | 12.48 kB/s | 14.62 kB/s |
+| Firmware | MCU | Test File | Write | Read |
+|---|---|---:|---:|---:|
+| Original USBasp | ATmega16 | 15,352 bytes | 2.39 kB/s | 3.87 kB/s |
+| FDxUISP V1.7s | ATmega16 | 15,352 bytes | 10.59 kB/s | 13.01 kB/s |
+| FDxUISP V1.7s | ATmega128 | 129,998 bytes | 12.52 kB/s | 13.28 kB/s |
 | FDxUISP Highest Record | Recorded build | 129,998 bytes | **13.05 kB/s** | **14.22 kB/s** |
 
+
+
+## Programming Time Comparison
+
+Estimated total time includes both flash writing and verification reading. The 32 KB estimate uses the FDxUISP V1.7s ATmega16 speed record; the 128 KB estimate uses the ATmega128 speed record.
+
+| MCU at 80% Flash | Programmer | 10 | 100 | 1k | 10k | 100k |
+|---|---|---:|---:|---:|---:|---:|
+| 32 KB — 26,214 bytes | FDxUISP V1.7s | 45s | 7m 29s | 1h 14m 50s | 12h 28m 23s | 5d 4h 43m 53s |
+| 32 KB — 26,214 bytes | Original USBasp | 2m 57s | 29m 34s | 4h 55m 42s | 2d 1h 17m 1s | 20d 12h 50m 11s |
+| 128 KB — 104,858 bytes | FDxUISP V1.7s | 2m 43s | 27m 7s | 4h 31m 11s | 1d 21h 11m 51s | 18d 19h 58m 31s |
+| 128 KB — 104,858 bytes | Original USBasp | 11m 50s | 1h 58m 17s | 19h 42m 48s | 8d 5h 8m 5s | 82d 3h 20m 46s |
 
 ## Buy Me a Coffee
 
