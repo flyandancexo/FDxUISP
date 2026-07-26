@@ -16,10 +16,6 @@ A lot of what I learned while coding my AVR910 programmer was used to rewrite FD
 
 The original hardware has a slow-clock switch. This is stupid and unnecessary when AUTO SCK is real. Since nearly every USBasp board has the switch, FDxUISP still uses it, but switching it turns on super-speed mode. Technically, this can be simple and complicated, so no further explanation is provided.
 
-## Circuit Schematic
-
-[View the Juno USBasp 2.0 schematic](hardware/Juno_USBasp_2.0_Schematic.pdf)
-
 ## Juno USBasp 2.0 Hardware
 
 - Compact V-USB programmer with an onboard AVR MCU and standard 6-pin ISP connector
@@ -31,7 +27,7 @@ The original hardware has a slow-clock switch. This is stupid and unnecessary wh
 ## Firmware Speed
 
 <p align="center">
-  <img src="images/FDxUISP_Speed_Test.png" alt="FDxUISP speed test" width="100%">
+  <img src="img/m16.PNG" alt="FDxUISP speed test" width="100%">
 </p>
 
 | Firmware | Clock | Test File | Write | Read |
