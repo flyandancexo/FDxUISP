@@ -1,4 +1,4 @@
-# FDxUISP - Ultimate USBasp Programmer 10KB/s++
+# FDxUISP - Ultimate USBasp Mod Programmer 10KB/s++
 
 USBasp is a programmer based on the V-USB project, a virtual software-based USB device simulator. A programmer transfers compiled machine code into an MCU, so in that sense, a programmer is an uploader.
 
