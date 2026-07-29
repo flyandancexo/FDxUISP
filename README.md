@@ -10,15 +10,21 @@ USBasp is a programmer based on the V-USB project, a virtual software-based USB 
 **Juno USBasp 2.0** is my second PCB design. It measures only **28 × 12 mm**, probably the world's smallest USBasp hardware. The firmware is christened **FDxUISP**. Everything, including V-USB, has been rewritten and optimized, with lightning-fast **13.05 kB/s write** and **14.22 kB/s read** speeds recorded.
 
 ## Why FDxUISP
-
+<img src="image/Juno_USBasp.jpg" width="500" align="left">
 The original firmware claims up to 5 KB/s. You are lucky to get half. It uses a fake AUTO SCK and normally selects a fixed speed of about **375 kHz**.
 
 A lot of what I learned while coding my AVR910 programmer was used to rewrite FDxUISP, including a real AUTO SCK algorithm. FDxUISP automatically scans from **4 MHz down to 488 Hz**, allowing fast programming while safely supporting heavily under-clocked MCUs.
 
-The original hardware has a slow-clock switch. This is stupid and unnecessary when AUTO SCK is real. Since nearly every USBasp board has the switch, FDxUISP still uses it, but switching it turns on super-speed mode. Technically, this can be simple and complicated, so no further explanation is provided.
+The original hardware has a slow-clock switch. This is stupid and unnecessary when AUTO SCK is real. Since nearly every USBasp board has the switch, FDxUISP still uses it, but switching it turns on turbo mode to use the maximum SCK detected, which can sometimes be unstable because the SCK on the programmer needs to be slightly slower than the target SCK. This is actually very complicated in a real-world situation. If you use 12MHz in the programmer, you get a 3MHz maximum usable SCK. To program a 16MHz MCU, its maximum SCK is 4MHz, so the turbo mode works perfectly fine and stable in this situation, since 3MHz ≤ 4MHz. The list goes on and on. To achieve the absolute transfer speed — which my firmware has probably already done — the main bottleneck from AVRdude is not under my control, so I must compensate for the mediocrity of other people. Currently, with AI calculations, the best CPU clock is 15MHz, and a 24MHz driver has been created and is ready to be tested, so the record here can be easily broken later on, as FDxUISP is still in a beta state.
+<br clear="left">
 
+## FDxUISP Features
+- Transfter speed 10KB/s+ (15KB/s+ to be expected once done)
+- Real and stable auto SCK that supports fastest and slowest target CPU clock
+- Sophicated timing management 
+- Sophicated LED code rewritten
 
-## Firmware Speed
+## FDxUISP Speed
 
 | Firmware | MCU | Test File | Write | Read |
 |---|---|---:|---:|---:|
