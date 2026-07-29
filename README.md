@@ -19,10 +19,10 @@ The original hardware has a slow-clock switch. This is stupid and unnecessary wh
 <br clear="left">
 
 ## FDxUISP Features
-- Transfter speed 10KB/s+ (15KB/s+ to be expected once done)
-- Real and stable auto SCK that supports fastest and slowest target CPU clock
-- Sophicated timing management 
-- Sophicated LED code rewritten
+- Transfer speed 10KB/s+ (15KB/s+ is expected once done)
+- Real and stable auto SCK that supports the fastest and slowest target CPU clocks
+- Sophisticated timing management 
+- Sophisticated LED code showing each stage of the programming process
 
 ## FDxUISP Speed
 
