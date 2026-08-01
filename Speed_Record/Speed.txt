@@ -1,18 +1,15 @@
-===============================================
-FDxUISP_V1.7s - Atmega16
+==================================================
+FDxUISP_V1.83
 
-10.59 kB/s Write || 13.01 kB/s Read
+USBasp - ATmega16:
+12.58 kB/s Write and 14.76 kB/s Read
 
-15352 / 1.45 / 1000 = 10.59 kB/s Write
-15352 / 1.18 / 1000 = 13.01 kB/s Read
+15352 / 1.22 = 12.58 kB/s Write
+15352 / 1.04 = 14.76 kB/s Read
 
-===============================================
 
-FDxUISP_V1.7s - Atmega128
+USBasp - ATmega128:
+15.19 kB/s Write and 15.26 kB/s Read
 
-12.52 kB/s Write || 13.28 kB/s Read
-
-129998 / 10.38 / 1000 = 12.52 kB/s Write
-129998 / 9.79 / 1000 = 13.28 kB/s Read
-
-These are the records for newest FDxUISP_V1.7s AI optimized version.
+129998 / 8.56 = 15.19 kB/s Write
+129998 / 8.52 = 15.26 kB/s Read
