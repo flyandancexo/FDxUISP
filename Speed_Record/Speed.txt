@@ -1,15 +1,25 @@
 ==================================================
-FDxUISP_V1.83
-
+FDxUISP_V1.83 Speed Record - 16MHz Programmer
+==================================================
+(This is standard, but in reality, SCK is 4MHz here.)
 USBasp - ATmega16:
 12.58 kB/s Write and 14.76 kB/s Read
 
 15352 / 1.22 = 12.58 kB/s Write
 15352 / 1.04 = 14.76 kB/s Read
 
-
+==================================================
+(This is the fastest record. Atmega128 has 256 byte page, so it writes 256 bytes at a time.)
 USBasp - ATmega128:
 15.19 kB/s Write and 15.26 kB/s Read
 
 129998 / 8.56 = 15.19 kB/s Write
 129998 / 8.52 = 15.26 kB/s Read
+
+==================================================
+(For this MCU, it writes 2 bytes at a time, so super slow, but much faster than original)
+USBasp - ATtiny10: 
+0.36 kB/s Write and 3.78 kB/s Read
+
+1020 / 2.87 = 0.36 kB/s Write
+1020 / 0.27 = 3.78 kB/s Read
