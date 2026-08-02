@@ -23,7 +23,7 @@ The original hardware has a slow-clock switch. This is stupid and unnecessary wh
 - Real and stable auto SCK that supports the fastest and slowest target CPU clocks
 - Sophisticated timing management 
 - Sophisticated LED code showing each stage of the programming process
-- Rewritten TPI completely that achieves 0.35 kB/s Write and 3.92 kB/s Read on an Attiny10
+- Rewritten TPI completely that achieves 0.36 kB/s Write and 4 kB/s Read on an Attiny10 ( 0.3 kB/s and 2.5 KB/s Read from Original )
 
 ## FDxUISP Speed
 
@@ -44,10 +44,10 @@ Estimated total time includes both flash writing and verification reading. The 3
 
 | MCU at 80% | Firmware | 1 | 10 | 100 | 1k | 10k |
 |---|---|---:|---:|---:|---:|---:|
-| 32 KB | **FDxUISP** | 4s | 39s | 6m 26s | 1h 4m | 10h 43m |
-| 32 KB | Original | 18s | 2m 57s | 29m 34s | 4h 55m | 2d 1h |
-| 128 KB | **FDxUISP** | 14s | 2m 18s | 22m 57s | 3h 49m | 1d 14h |
-| 128 KB | Original | 1m 11s | 11m 50s | 1h 58m  | 19h 42m | 8d 5h |
+| 32 KB — 26,214 bytes | **FDxUISP V1.83** | 4s | 39s | 6m 26s | 1h 4m 20s | 10h 43m 18s |
+| 32 KB — 26,214 bytes | Original | 18s | 2m 57s | 29m 34s | 4h 55m | 2d 1h 17m |
+| 128 KB — 104,858 bytes | **FDxUISP V1.83** | 14s | 2m 18s | 22m 57s | 3h 49m 35s | 1d 14h 15m 45s |
+| 128 KB — 104,858 bytes | Original | 1m 11s | 11m 50s | 1h 58m 17s | 19h 42m | 8d 5h 8m |
 
 ## Buy Me a Coffee
 
